@@ -1,0 +1,76 @@
+<!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 7.0.0-b478feaa9aab4375eba71de77b4ca138ad2f62aa  -->
+<jasperReport name="Main Report" language="java" columnCount="1" pageWidth="500" pageHeight="595" columnWidth="460" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="165c4be2-620b-416c-9f08-51e2ea8802ab">
+	<property name="com.jaspersoft.studio.unit." value="mm"/>
+	<query language="sql"><![CDATA[]]></query>
+	<field name="COLUMN_1" class="java.lang.String"/>
+	<field name="COLUMN_2" class="java.lang.String"/>
+	<field name="COLUMN_3" class="java.lang.String"/>
+	<field name="COLUMN_4" class="java.lang.String"/>
+	<field name="COLUMN_5" class="java.lang.String"/>
+	<background splitType="Stretch"/>
+	<title height="80" splitType="Stretch">
+		<element kind="staticText" uuid="0e1fcbca-3f5a-476c-ad60-768f18327258" x="100" y="0" width="140" height="20" forecolor="#F5211D" fontSize="11.0" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Udugama National School]]></text>
+		</element>
+		<element kind="staticText" uuid="d5a5f216-eb1e-44b5-8bd3-639c752895b8" x="240" y="0" width="118" height="20" forecolor="#2A20F5" fontSize="10.0" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[GALLE  SRI LANKA.]]></text>
+		</element>
+		<element kind="staticText" uuid="01dc2509-dbd8-4397-950d-c39ca5f4bd89" x="80" y="40" width="300" height="30" fontSize="12.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[LIBRARY SUBMITTED ISSUED BOOK REPORT ]]></text>
+		</element>
+	</title>
+	<columnHeader height="16">
+		<element kind="staticText" uuid="d17f13cc-07a2-4036-ad7f-c250b260d78b" x="300" y="0" width="61" height="14" fontSize="8.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Due Date]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3c92a2bc-640f-4cfd-bad6-3b285609480f"/>
+		</element>
+		<element kind="staticText" uuid="19553f86-af12-45e9-8c01-268ad1d6a642" x="30" y="0" width="40" height="14" fontSize="9.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[#]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="212c4be7-77fd-493e-a212-1e1a69110eb8"/>
+		</element>
+		<element kind="staticText" uuid="c433b64d-3ebd-481a-a1bc-fb230c5b5698" x="70" y="0" width="80" height="14" fontSize="9.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Book Name]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="df75a851-e168-4d64-838e-d8ef67af6fc6"/>
+		</element>
+		<element kind="staticText" uuid="7883b3e2-ee56-4f74-aac8-30e35c7eb843" x="150" y="0" width="80" height="14" fontSize="9.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Student Name]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="46c1e022-58d9-420b-9527-26dee04ee56a"/>
+		</element>
+		<element kind="staticText" uuid="2364dfaf-4b59-4b9d-a858-aee039bb0c64" x="230" y="0" width="70" height="14" fontSize="9.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Issue Date]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="252f1981-0ef2-460d-a130-01609459c355"/>
+		</element>
+		<element kind="staticText" uuid="87fb4500-d0d7-4585-bdc2-746d2ce98250" x="361" y="0" width="69" height="14" fontSize="8.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Status]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9ec3b09a-d82d-4e48-bc8e-3a81965ca73d"/>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="22" splitType="Stretch">
+			<element kind="textField" uuid="7c3e6e5a-1714-456a-b1e4-063c3f18f9d2" x="70" y="0" width="80" height="20" fontSize="8.0" hTextAlign="Left" vTextAlign="Middle">
+				<expression><![CDATA[$F{COLUMN_1}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ba2058d7-69f8-4f25-8f72-440c76ef6541"/>
+			</element>
+			<element kind="textField" uuid="6bc237fd-8cd5-4b7d-9270-b7301faf9450" x="150" y="0" width="80" height="20" fontSize="8.0" hTextAlign="Left" vTextAlign="Middle">
+				<expression><![CDATA[$F{COLUMN_2}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3c92a2bc-640f-4cfd-bad6-3b285609480f"/>
+			</element>
+			<element kind="textField" uuid="dbfe0e3c-5658-4b12-b313-f38065b9600d" x="230" y="0" width="70" height="20" fontSize="8.0" hTextAlign="Left" vTextAlign="Middle">
+				<expression><![CDATA[$F{COLUMN_3}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="212c4be7-77fd-493e-a212-1e1a69110eb8"/>
+			</element>
+			<element kind="textField" uuid="43bf5028-b173-4da4-b7c1-676fe2f970c2" x="300" y="0" width="61" height="20" fontSize="8.0" hTextAlign="Left" vTextAlign="Middle">
+				<expression><![CDATA[$F{COLUMN_4}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="df75a851-e168-4d64-838e-d8ef67af6fc6"/>
+			</element>
+			<element kind="textField" uuid="838bd1d0-1599-43a7-be02-92a178318f4c" x="30" y="0" width="40" height="20" fontSize="8.0" vTextAlign="Middle">
+				<expression><![CDATA[$V{REPORT_COUNT}]]></expression>
+			</element>
+			<element kind="textField" uuid="40a3167f-2952-4df5-a586-8bda1547319f" x="361" y="0" width="69" height="20" fontSize="8.0" vTextAlign="Middle">
+				<expression><![CDATA[$F{COLUMN_5}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9ec3b09a-d82d-4e48-bc8e-3a81965ca73d"/>
+			</element>
+		</band>
+	</detail>
+	<summary height="50" splitType="Stretch"/>
+</jasperReport>
